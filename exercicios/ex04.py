@@ -1,0 +1,8 @@
+n = input('Digite algum número ou frase, e te retornaremos suas possíveis calsses')
+print('o tipo dessa variavel é:', type(n))
+print('é númerico ?', n.isalnum())
+print('é alfabetico ?', n.isalpha())
+print('está em minusculo ?', n.islower())
+print('está em maiusculo ?', n.isupper())
+print('é espaço ?', n.isspace())
+print('é digito ?', n.isdigit())
