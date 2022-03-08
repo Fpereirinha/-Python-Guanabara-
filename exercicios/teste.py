@@ -40,3 +40,4 @@ for c in range(1,quantidade +1):
 print(f'A soma de {quantidade} numeros é {soma}')'''
 
 
+
