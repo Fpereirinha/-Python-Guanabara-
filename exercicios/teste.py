@@ -38,6 +38,15 @@ for c in range(1,quantidade +1):
     z = int(input(f'Digite o {c}° número a ser somado.'))
     soma += z
 print(f'A soma de {quantidade} numeros é {soma}')'''
+from random import randint
+while True:
+    x = randint(0, 100)
+    if x == 100:
+        print(x)
+        break
+    else:
+        print(x)
+
 
 
 
