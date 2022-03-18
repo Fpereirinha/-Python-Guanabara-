@@ -6,4 +6,6 @@ for pos, c in enumerate(x):
 #for cont in range(0, len(x)):
 #     print(f'Meu nome é {x[cont]}')
 '''
-print('doideira')
+'''print('doideira')'''
+lista = [1,2]
+print(len(lista))
