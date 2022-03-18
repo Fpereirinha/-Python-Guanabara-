@@ -1,5 +1,4 @@
 import time
-
 print('\033[34m{:=^40}\033[m'.format(' CASAS BAHIA '))
 preco = float(input('Preço total das compras: R$'))
 blue = '\033[36m'
