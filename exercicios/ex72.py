@@ -1,6 +1,6 @@
-numero = ['zero','um','dois','três','quatro','cinco','seis','sete',
- 'oito','nove','dez','onze','doze','treze','quatorze','quinze','dezesseis',
-          'dezessete','dezoito','dezenove','vinte']
+numero = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete',
+          'oito', 'nove', 'dez', 'onze', 'doze', 'treze', 'quatorze', 'quinze', 'dezesseis',
+          'dezessete', 'dezoito', 'dezenove', 'vinte']
 while True:
     x = int(input('Digite o número para ver o extenso'))
     if 21 > x >= 0:
