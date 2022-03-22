@@ -29,10 +29,8 @@ while True:
     if n1 == 'N':
         break
     n = int(input('Qual o jogador deseja saber os dados ? [N] para encerrar'))
-    for key, dados in geral[n].items():
-        if key == 'Gols':
-            for x, item in enumerate(dados):
-                print(f'No jogo {x+1} ele fez {dados[x]} gols')
+    for contador, dados in enumerate(geral[n]["Gols"]):
+         print(f'No jogo {contador+1} ele fez {dados} gols')
 
 
 
