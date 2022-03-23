@@ -6,7 +6,7 @@ while True:
     jogador['Nome'] = str(input('Qual o nome do jogador ?'))
     total = int(input(f'Quantas partidas {jogador["Nome"]} jogou ?'))
     for c in range(total):
-        n = int(input(f'Quantos gols ele marcou no {c+1}° jogo ?'))
+        n = int(input(f'Quantos gols ele marcou no {c + 1}° jogo ?'))
         partidas.append(n)
     jogador['Gols'] = partidas[:]
     jogador['Total'] = sum(partidas)
@@ -29,13 +29,9 @@ while True:
     if n1 == 'N':
         break
     n = int(input('Qual o jogador deseja saber os dados ? [N] para encerrar'))
-    for contador, dados in enumerate(geral[n]["Gols"]):
-         print(f'No jogo {contador+1} ele fez {dados} gols')
-
-
-
-
-
-
-
-
+    if n > len(geral):
+        print('Não existe esse jogador.')
+        n = int(input('Qual o jogador deseja saber os dados ? [N] para encerrar'))
+    else:
+        for contador, dados in enumerate(geral[n]["Gols"]):
+            print(f'No jogo {contador + 1} ele fez {dados} gols')
