@@ -46,7 +46,3 @@ while True:
         break
     else:
         print(x)'''
-
-
-
-
