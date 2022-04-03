@@ -43,3 +43,34 @@ def metade(x):
 
 def moeda(preco=0, simb='R$'):
     return f'{simb}{preco:.2f}'.replace('.', ',')
+
+
+def leiaInt(x):
+    while True:
+        try:
+            n = int(input(x).strip())
+        except(ValueError, TypeError):
+            print(f'Digite um número válido !')
+        else:
+            return n
+
+
+def leiaFloat(x):
+    while True:
+        try:
+            n = float(input(x).strip().replace(',','.'))
+        except(ValueError, TypeError):
+            print(f'Digite um número válido !')
+        except(KeyboardInterrupt):
+            print('Entrada interrompida pelo usúario.', end='')
+            exit()
+        else:
+            return n
+
+
+def menu(x):
+    titulo('Menu Principal !')
+    for c,i in enumerate(x):
+        print(f'{c+1} {i}')
+    opc = leiaInt('Opção: ')
+    return opc
